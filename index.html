@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <title>dark-mode</title>
+    <title>simple-dark-mode</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style.css" />
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,26 +15,28 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
-    <main>
-      <div class="container">
-        <h1>Hello World!</h1>
+  <body>
+    <section id="main">
+      <div class="wrapper">
+        <header>
+          <h4>Simple Dark Mode 📌</h4>
+          <h1>Hello World!</h1>
+        </header>
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-          pariatur, id magnam vitae consectetur nihil ipsam quis eveniet optio
-          debitis repudiandae tempore illum vero alias unde quaerat dolor illo
-          voluptatem.
-        </p>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
+            veritatis? Aliquid a perferendis corporis facilis nisi sunt
+            distinctio ratione esse quisquam aperiam tempore, reiciendis,
+            debitis reprehenderit incidunt unde deserunt? Enim?
+          </p>
 
-        <button onclick="onDarkMode()" class="darkmode-button">
-          Darkmode
-        </button>
-        <button onclick="onLightMode()" class="lightmode-button">
-          Lightmode
-        </button>
+          <button class="dark-mode-button" onclick="onDarkMode()">Dark Mode</button>
+          <button class="light-mode-button" onclick="onLightMode()">Light Mode</button>
+        </div>
       </div>
-    </main>
+    </section>
+
     <script src="main.js"></script>
   </body>
 </html>
